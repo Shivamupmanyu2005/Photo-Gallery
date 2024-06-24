@@ -1,0 +1,124 @@
+/* Photo_gallery.css */
+body {
+    font-family: 'Pacifico', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: black;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+#gallery-item-1,
+#gallery-item-2,
+#gallery-item-3 {
+    width: calc(33.333% - 10px);
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+#gallery-item-1 img,
+#gallery-item-2 img,
+#gallery-item-3 img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+#gallery-item-1:hover,
+#gallery-item-2:hover,
+#gallery-item-3:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    #gallery-item-1,
+    #gallery-item-2,
+    #gallery-item-3 {
+        width: calc(50% - 10px);
+    }
+}
+
+@media (max-width: 480px) {
+    #gallery-item-1,
+    #gallery-item-2,
+    #gallery-item-3 {
+        width: 100%;
+    }
+}
+#gallery-item-2 img{
+    height: 350px;
+    width: 420px;
+}
+
+#gallery-item-3 img{
+    height: 350px;
+    width: 420px;
+
+    
+}
+#gallery-item-1 img{
+    height: 350px ;
+    width: 425px;
+}
+
+#Rinkiya{
+    background-color: #fff;
+    font-size: medium;
+    width: 55px;
+}
+#Chinkiya{
+    background-color: #fff;
+    font-size: medium;
+    width: 55px;
+}
+#Ritika{
+    background: white;
+    font-size: medium;
+    width: 55px;
+
+}
+/* Button Styling */
+.prev-btn,
+.next-btn {
+    width: calc(100% - 20px);
+    margin: 10px;
+    padding: 10px;
+    font-size: 1em;
+    background-color: #1a237e; /* Dark blue background */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-align: center;
+}
+
+.prev-btn {
+    float: left;
+}
+
+.next-btn {
+    float: right;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+    background-color: #283593; /* Darker blue on hover */
+    transform: scale(1.1);
+}
+
